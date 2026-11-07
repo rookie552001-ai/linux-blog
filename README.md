@@ -1,6 +1,6 @@
 # 姜泽之的 Hugo 学习博客
 
-Hugo + PaperMod 个人博客，包含首页、关于、标签、分类、归档、搜索和三篇非草稿文章。仓库为 `3046780699-cmd/linux-blog`，GitHub Pages 目标地址为 `https://3046780699-cmd.github.io/linux-blog/`。是否已部署请以仓库 Actions 和 Pages 的实时状态为准。
+Hugo + PaperMod 个人博客，包含首页、关于、标签、分类、归档、搜索和三篇非草稿文章。仓库为 `rookie552001-ai/linux-blog`，GitHub Pages 目标地址为 `https://rookie552001-ai.github.io/linux-blog/`。是否已部署请以仓库 Actions 和 Pages 的实时状态为准。
 
 ## 在 Linux 运行
 
@@ -46,7 +46,7 @@ content/archives.md          归档页，layout: archives
 content/posts/               三篇正式文章
 static/images/               图片资源
 themes/PaperMod/             真实 PaperMod 主题
-.github/workflows/hugo.yaml   待手动触发的 Pages 工作流
+.github/workflows/hugo.yaml   推送自动部署及手动触发的 Pages 工作流
 .gitignore                   排除 public/ 和构建缓存
 ```
 
@@ -60,7 +60,7 @@ themes/PaperMod/             真实 PaperMod 主题
 4. 工作流递归检出子模块，使用 `peaceiris/actions-hugo@v3` 安装固定 Hugo 版本，再从 `actions/configure-pages` 读取真实 `base_url`。发布路径由实际仓库决定，避免用户站点与项目站点的 CSS 路径混淆。
 5. 构建与部署都成功后，从部署结果取得真实公网 URL，打开首页、关于、标签、分类、归档和搜索，并补拍绿色 Actions、Pages 设置和公网浏览器截图。
 
-`.gitignore` 排除了 `public/`，构建产物不进入主分支。开发预览内容与将来公网部署使用同一份源码；发布前补齐个人资料。
+`.gitignore` 排除了 `public/`，构建产物不进入主分支。开发预览内容与将来公网部署使用同一份源码；个人资料已按本人要求填写。
 
 ## 常见问题
 
